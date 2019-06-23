@@ -1,0 +1,244 @@
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<style> 
+      html,body{
+          background-color: #f8cf0e;
+          padding:0;
+          margin:0;
+      }
+      .all_continent{
+          padding: 50;
+      }
+      .continent img{
+          position: absolute;       
+          float: left;
+      }
+    
+    
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    /*아시아*/
+    #asia {
+        left: 50%;
+        top: 30%;
+        width: 30em;
+    }
+
+    #asia img { 
+        left: 50%;
+        top: 30%;
+        width: 30em;  
+    }
+
+    #asia > #asiahover {                    
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    #asia:hover > #asiahover {
+        opacity: 1;
+    } 
+    #asiatext{
+        left:67%;
+        top:47%;
+        z-index: 1;
+    }
+    
+    /*유럽*/
+    #europe{
+        width: 15em;
+        left:39%;
+        top:23%;
+    }
+    #europe img{
+        width: 15em;
+        left:39%;
+        top:23%;
+    }
+    #europe > #europehover {                    
+        opacity: 0;
+        transition: opacity 1s;
+    }
+
+    #europe:hover > #europehover {
+        opacity: 1;
+    }
+    #europetext{
+        left:47%;
+        top:37.2%;
+        z-index: 1;
+    }
+
+    /*아프리카*/
+    #africa{
+        width: 17em;
+        top: 48.5%;
+        left: 39%;
+    }
+    #africa img{
+        width: 17em;
+        top: 48.5%;
+        left: 39%;
+    }
+    #africa > #africahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #africa:hover > #africahover{
+        opacity:1;
+    }
+    #africatext{
+        left:47%;
+        top:60%;
+        z-index: 1;
+    }
+    
+    /*북아메리카*/
+    #n_america{
+        width: 20.5em;
+        left: 15%;
+        top:25%;
+    }
+    #n_america img{
+        width: 20.5em;
+        left: 15%;
+        top:25%;
+    }
+    #n_america > #n_americahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #n_america:hover > #n_americahover{
+        opacity:1;
+    }
+    #n_americatext{
+        left:25%;
+        top:46%;
+        z-index: 1;
+    }
+    
+    /*남아메리카*/
+    #s_america{
+        width: 12em;
+        left: 25%;
+        top: 57%;
+    }
+    #s_america img{
+        width: 12em;
+        left: 25%;
+        top: 57%;
+    }
+    #s_america > #s_americahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #s_america:hover > #s_americahover{
+        opacity:1;
+    }
+    #s_americatext{
+        left:31.8%;
+        top:70%;
+        z-index: 1;
+    }
+    
+    /*오세아니아*/
+    #oceania{
+        width: 15em;
+        left: 69.5%;
+        top: 65%;
+    }
+    #oceania img{
+        width: 15em;
+        left: 69.5%;
+        top: 65%;
+    }
+    #oceania > #oceaniahover{
+        opacity:0;
+        transition:opacity 1s;
+    }
+    #oceania:hover > #oceaniahover{
+        opacity:1;
+    }
+    #oceaniatext{
+        left:77%;
+        top:78.5%;
+        z-index: 1;
+    }
+    
+    
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    #title{
+        background-color: #181d61;
+        padding:5px;
+        color:#f8cf0e;
+        font-weight: bold;
+        font-size:150%;
+        margin-left: 45%;
+    }
+    #subtitle{
+        font-size: 130%;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div class="all_continent">
+    <font id="title">Hello, World!</font>
+    <p id="subtitle">─<br>원하시는 대륙으로 여행을 떠나보세요!</p>
+    <div class="continent" id="asia">
+        <img src="img/%EC%95%84%EC%8B%9C%EC%95%84.png">
+        <img id="asiahover" src="img/%EC%95%84%EC%8B%9C%EC%95%84hover.png">
+        <div class="text" id="asiatext">아시아</div>
+    </div>
+    
+    <div class="continent" id="europe">
+        <img src="img/%EC%9C%A0%EB%9F%BD.png">
+        <img id="europehover" src="img/%EC%9C%A0%EB%9F%BDhover.png">
+        <div class="text" id="europetext">유럽</div>
+    </div>
+    
+    <div class="continent" id="africa">
+        <img src="img/%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4.png">
+        <img id="africahover" src="img/%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4hover.png">
+        <div class="text" id="africatext">아프리카</div>
+    </div>
+    
+    <div class="continent" id="n_america">
+        <img src="img/%EB%B6%81%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4.png">
+        <img id="n_americahover" src="img/%EB%B6%81%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4hover.png">
+        <div class="text" id="n_americatext">북아메리카</div>
+    </div>
+    
+    <div class="continent" id="s_america">
+        <img src="img/%EB%82%A8%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4.png">
+        <img id="s_americahover" src="img/%EB%82%A8%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4hover.png">
+        <div class="text" id="s_americatext">남아메리카</div>
+    </div>
+    
+    <div class="continent" id="oceania">
+        <img src="img/%EC%98%A4%EC%84%B8%EC%95%84%EB%8B%88%EC%95%84.png">
+        <img id="oceaniahover" src="img/%EC%98%A4%EC%84%B8%EC%95%84%EB%8B%88%EC%95%84hover.png">
+        <div class="text" id="oceaniatext">오세아니아</div>
+    </div>
+</div>
+</body>
